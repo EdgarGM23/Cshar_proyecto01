@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             btncalcular = new Button();
-            txtmillas = new TextBox();
-            lblmillas = new Label();
+            txtpulgadas = new TextBox();
+            lblpulgadas = new Label();
             txtpies = new TextBox();
             lblpies = new Label();
-            txtmetrosTotales = new TextBox();
+            txtmetros = new TextBox();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -45,23 +45,24 @@
             btncalcular.TabIndex = 17;
             btncalcular.Text = "Calcular";
             btncalcular.UseVisualStyleBackColor = true;
+            btncalcular.Click += btncalcular_Click;
             // 
-            // txtmillas
+            // txtpulgadas
             // 
-            txtmillas.Location = new Point(123, 61);
-            txtmillas.Name = "txtmillas";
-            txtmillas.Size = new Size(80, 23);
-            txtmillas.TabIndex = 15;
-            txtmillas.TextAlign = HorizontalAlignment.Right;
+            txtpulgadas.Location = new Point(123, 61);
+            txtpulgadas.Name = "txtpulgadas";
+            txtpulgadas.Size = new Size(80, 23);
+            txtpulgadas.TabIndex = 15;
+            txtpulgadas.TextAlign = HorizontalAlignment.Right;
             // 
-            // lblmillas
+            // lblpulgadas
             // 
-            lblmillas.AutoSize = true;
-            lblmillas.Location = new Point(49, 64);
-            lblmillas.Name = "lblmillas";
-            lblmillas.Size = new Size(38, 15);
-            lblmillas.TabIndex = 13;
-            lblmillas.Text = "Millas";
+            lblpulgadas.AutoSize = true;
+            lblpulgadas.Location = new Point(49, 64);
+            lblpulgadas.Name = "lblpulgadas";
+            lblpulgadas.Size = new Size(55, 15);
+            lblpulgadas.TabIndex = 13;
+            lblpulgadas.Text = "Pulgadas";
             // 
             // txtpies
             // 
@@ -80,14 +81,14 @@
             lblpies.TabIndex = 14;
             lblpies.Text = "Pies";
             // 
-            // txtmetrosTotales
+            // txtmetros
             // 
-            txtmetrosTotales.Location = new Point(83, 146);
-            txtmetrosTotales.Name = "txtmetrosTotales";
-            txtmetrosTotales.ReadOnly = true;
-            txtmetrosTotales.Size = new Size(80, 23);
-            txtmetrosTotales.TabIndex = 19;
-            txtmetrosTotales.TextAlign = HorizontalAlignment.Right;
+            txtmetros.Location = new Point(83, 146);
+            txtmetros.Name = "txtmetros";
+            txtmetros.ReadOnly = true;
+            txtmetros.Size = new Size(80, 23);
+            txtmetros.TabIndex = 19;
+            txtmetros.TextAlign = HorizontalAlignment.Right;
             // 
             // label4
             // 
@@ -104,11 +105,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(253, 251);
-            Controls.Add(txtmetrosTotales);
+            Controls.Add(txtmetros);
             Controls.Add(label4);
             Controls.Add(btncalcular);
-            Controls.Add(txtmillas);
-            Controls.Add(lblmillas);
+            Controls.Add(txtpulgadas);
+            Controls.Add(lblpulgadas);
             Controls.Add(txtpies);
             Controls.Add(lblpies);
             Name = "_04";
@@ -120,11 +121,11 @@
         #endregion
 
         private Button btncalcular;
-        private TextBox txtmillas;
-        private Label lblmillas;
+        private TextBox txtpulgadas;
+        private Label lblpulgadas;
         private TextBox txtpies;
         private Label lblpies;
-        private TextBox txtmetrosTotales;
+        private TextBox txtmetros;
         private Label label4;
     }
 }

@@ -21,5 +21,17 @@ namespace proyecto01.secuenciales
         {
 
         }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            int pies = int.Parse(txtpies.Text);
+            int pulgadas = int.Parse(txtpulgadas.Text);
+            double converpies = pies * 3.281;
+            double converpulgadas = pulgadas / 39.37;
+
+            double metros = converpies + converpulgadas;
+
+            txtmetros.Text = metros.ToString("##.00");
+        }
     }
 }
