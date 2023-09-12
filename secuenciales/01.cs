@@ -16,5 +16,18 @@ namespace proyecto01.secuenciales
         {
             InitializeComponent();
         }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            int varones = int.Parse(txtVarones.Text);
+            int mujeres = int.Parse(txtMujeres.Text);
+            int total = varones + mujeres;
+
+            double pVarones = varones * 100.0 / total;
+            double pMujeres = mujeres * 100.0 / total;
+
+            lblPVarones.Text = ("" + pVarones.ToString("##.00") + "%");
+            lblPMujeres.Text = ("" + pMujeres.ToString("##.00") + "%");
+        }
     }
 }
