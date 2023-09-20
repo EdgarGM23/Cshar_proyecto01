@@ -11,7 +11,7 @@ namespace proyecto01
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new condicionales._40());
+            Application.Run(new repetitivos._20());
         }
     }
 }
