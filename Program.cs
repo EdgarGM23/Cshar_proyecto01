@@ -1,3 +1,5 @@
+using appFP_CSharp.Login;
+
 namespace proyecto01
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace proyecto01
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new repetitivos._20());
+            Application.Run(new frmLogin());
         }
     }
 }

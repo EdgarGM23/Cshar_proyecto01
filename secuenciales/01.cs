@@ -25,8 +25,8 @@ namespace proyecto01.secuenciales
 
             double pVarones = varones * 100.0 / total;
             double pMujeres = mujeres * 100.0 / total;
-
-            lblPVarones.Text = ("" + pVarones.ToString("##.00") + "%");
+            
+            lblPVarones.Text = "" + pVarones.ToString("##.00") + "%";
             lblPMujeres.Text = ("" + pMujeres.ToString("##.00") + "%");
         }
     }

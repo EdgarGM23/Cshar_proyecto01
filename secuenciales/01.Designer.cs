@@ -42,7 +42,7 @@
             btncalcular.Location = new Point(105, 142);
             btncalcular.Name = "btncalcular";
             btncalcular.Size = new Size(79, 28);
-            btncalcular.TabIndex = 0;
+            btncalcular.TabIndex = 3;
             btncalcular.Text = "Calcular";
             btncalcular.UseVisualStyleBackColor = true;
             btncalcular.Click += btncalcular_Click;
@@ -61,7 +61,7 @@
             txtVarones.Location = new Point(117, 43);
             txtVarones.Name = "txtVarones";
             txtVarones.Size = new Size(80, 23);
-            txtVarones.TabIndex = 2;
+            txtVarones.TabIndex = 1;
             txtVarones.TextAlign = HorizontalAlignment.Right;
             // 
             // lblPVarones
@@ -103,7 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 211);
+            ClientSize = new Size(280, 184);
             Controls.Add(lblPMujeres);
             Controls.Add(lblPVarones);
             Controls.Add(txtMujeres);
